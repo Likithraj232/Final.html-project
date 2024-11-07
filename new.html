@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    
+    <title>Responsive Portfilo website | Taleh Rzayev</title>
+    <link rel="stylesheet" href="new.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Works</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="toggle">
+        <a href="#">
+          <ion-icon name="menu-outline"></ion-icon>
+        </a>
+      </div>
+    </nav>
+    <header>
+      <div class="container">
+        <div class="section1">
+          <div class="head-img">
+          
+          </div>
+          <div class="img-article">
+            <h1>Hi, I am Likith Raj</h1>
+            <p class="about">
+              Welcome to my AI and Data Engineering portfolio! I specialize in designing, building, and deploying intelligent systems that unlock the power of data. With a strong foundation in machine learning, data processing, and scalable architecture, I create data-driven solutions that drive efficiency, insights, and innovation for businesses.
+            </p>
+            <a href="#" class="down"><button>Download Resume</button></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="section2">
+      <div class="container">
+        <div class="section-p">
+          <p class="r-p">About me</p>
+          <p class="v-p"><a href="">View All</a></p>
+        </div>
+        <div class="recent-posts">
+          <div class="post-item">
+            <h1>Likith raj</h1>
+            <p>s/o Kiran Raj | from Nellore </p>
+            <p class="post-article">
+              I am Likith Raj, a dedicated and results-oriented professional passionate about leveraging technology to solve complex problems and drive innovation. With a strong foundation in [mention relevant field or technology expertise, e.g., software engineering, AI, or data analytics], I am skilled at transforming complex concepts into efficient solutions that bring tangible value to teams and clients.
+            </p>
+          </div>
+          <div class="post-item">
+            <h1>Why me </h1>
+    
+            <p class="post-article">
+              I believe I am a strong fit for this AI and Data Engineer position due to my solid foundation in both data engineering and machine learning, paired with a hands-on approach to problem-solving. My technical skills cover the entire data pipeline, from ETL processes to advanced model deployment, ensuring that I can handle both the engineering and analytical sides of data solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section3">
+      <div class="container">
+        <div class="c-p">
+          <p>Featured works</p>
+        </div>
+        <div class="f-w-item">
+          <div class="f-w-img">
+           
+          </div>
+          <div class="f-w-text">
+            <h1><a href="#">
+             Experience</h1></a>
+            <div class="f-w-text-p">
+              
+            </div>
+            <p class="f-w-article">
+              Developed and optimized generative AI models (GANs, Transformers) for 
+      applications in image synthesis, NLP, and personalized recommendations, 
+      boosting content generation efficiency by 60%.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="f-w-item">
+          <div class="f-w-img">
+          
+          </div>
+          <div class="f-w-text">
+            <h1><a href="#">
+              Education</h1></a>
+            <div class="f-w-text-p">
+              
+            </div>
+            <p class="f-w-article">
+              Bachelor of Science in Computer Science
+      University of Illinois UrbanaChampaign
+            </p>
+          </div>
+        </div>
+        <div class="f-w">
+          <hr />
+          <div class="f-w-item">
+            <div class="f-w-img">
+              
+            </div>
+            <div class="f-w-text">
+              <h1> <a href="#">
+               Skills</h1></a>
+              <div class="f-w-text-p">
+              
+              </div>
+              <p class="f-w-article">
+                Deep Learning & Neural Networks <br>
+                Programming & Scripting <br>
+                Natural Language Processing (NLP)
+      
+              </p>
+            </div>
+          </div>
+          <hr />
+          <div class="f-w-item">
+            <div class="f-w-img">
+             
+            </div>
+            <div class="f-w-text">
+              <h1><a href="#">
+                Contact</h1>
+              </a>
+              <div class="f-w-text-p">
+            
+              </div>
+              <p class="f-w-article">
+                Email: likith.raj@email.com <br>
+                Phone : 123456789 <br>
+
+
+              </p>
+            </div>
+          </div>
+          <hr />
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="social-buttons">
+        <a href="#"><img src="/img/fb.svg" alt="" />
+        </a>
+        <a href="#"><img src="/img/insta.svg" alt="" />
+        </a>
+        <a href="#"><img src="/img/twitter.svg" alt="" />
+        </a>
+        <a href="#"><img src="/img/linkedin.svg" alt="" />
+        </a>
+      </div>
+      <p>Copyright © 2022 All rights reserved <br><br> <b> ©Taleh Rzayev </b></p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $(".toggle").on("click", function () {
+          if ($(".nav-links").hasClass("active")) {
+            $(".nav-links").removeClass("active");
+            $(this).find("a").html('<ion-icon name="menu-outline"></ion-icon>');
+          } else {
+            $(".nav-links").addClass("active");
+            $(this)
+              .find("a")
+              .html('<ion-icon name="close-outline"></ion-icon>');
+          }
+        });
+      });
+    </script>
+  </body>
+  </html>
